@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://refvault.github.io/sitemap.xml

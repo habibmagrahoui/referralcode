@@ -92,3 +92,18 @@ function searchOffers() {
     c.style.display = c.innerText.toLowerCase().includes(q) ? 'flex' : 'none';
   });
 }
+
+window.addEventListener('scroll', function() {
+  var btt = document.getElementById('back-to-top');
+  if (btt) {
+    if (window.scrollY > 400) {
+      btt.classList.add('visible');
+    } else {
+      btt.classList.remove('visible');
+    }
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
